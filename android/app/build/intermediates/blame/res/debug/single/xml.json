@@ -2,5 +2,9 @@
     {
         "merged": "/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
         "source": "/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.47.2/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.47.2/res/xml/preferences.xml"
     }
 ]

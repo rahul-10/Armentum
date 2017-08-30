@@ -3,12 +3,21 @@
 
     <item
         is-multidex="false"
-        jar="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.0.1/jars/classes.jar"
+        jar="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
-        <dex dex="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.0.1_e20b8bb914792e6c6d0f6256e290935fc43f6e24.jar" />
+        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
+        <dex dex="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.0.1_0e47df6f666cf86e4afac3658f7975720a0dcea0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_62a3b7b38c383fce28bdc4d96cc55feafad6f0b2.jar" />
     </item>
     <item
         is-multidex="false"
@@ -17,61 +26,25 @@
         optimize="true"
         revision="23.0.1"
         sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
-        <dex dex="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_e4d9da4cf6f76328e2fc9d63823eefd52ebe45f0.jar" />
+        <dex dex="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_e4d9da4cf6f76328e2fc9d63823eefd52ebe45f0.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
-        <dex dex="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.0.1_0baaa8acf9877c260fd8d3a567b9f23a83844fc1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
-        <dex dex="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_46584b3075b9d6ab09150b2794578d42aca32d21.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1_be0c29573a0d2b5b3682758cde5e6829343a75aa.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
-        <dex dex="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.0.1_4099b2c96f803a6c26ed4733f042d264edc631a6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.1/jars/classes.jar"
+        jar="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
-        <dex dex="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.0.1_2c8e1709503fd68d87b336c14c0e760b8495d887.jar" />
+        <dex dex="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.0.1_9326875d1a02255e00878be71cabe70a1885a1a9.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.0.1/jars/classes.jar"
+        jar="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
-        <dex dex="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.0.1_4fa31193bdf3ec9b1280df4cc8bdec5999ee0820.jar" />
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_ce43e39a42a6a9608ecf5e8c8b67ca63a98c0abc.jar" />
     </item>
     <item
         is-multidex="false"
@@ -80,70 +53,16 @@
         optimize="true"
         revision="23.0.1"
         sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
-        <dex dex="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_b96cd5734418e564508f27500c91c5b331c445c4.jar" />
+        <dex dex="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_b96cd5734418e564508f27500c91c5b331c445c4.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.0.1/jars/classes.jar"
+        jar="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
-        <dex dex="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.0.1_06f930318ad5ce211b5eea9e7b977e6bff09d0ac.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
-        <dex dex="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.0.1_3478708a097861953c9c1d3bf29366f4c17cd83e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rahul/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
-        <dex dex="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1_09dce415c2a57e2c9ec4e3cbbe837b98dbbc6cb8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
-        <dex dex="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_c7dcc71d187667c180120a7941166b0f3d26de60.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.47.2/jars/libs/infer-annotations-4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
-        <dex dex="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_8074a05af6dc201ac72f60618e400afcfb10c0a1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rahul/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
-        <dex dex="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_e050c62399c740e87c7a87284e792296b5c816d2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_7d7582ba29fa393e05282dcf17e6b3837cf958fb.jar" />
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_02ee750ab088b95759ded7d5c9d3fd2e23ebaa5b.jar" />
     </item>
     <item
         is-multidex="false"
@@ -152,25 +71,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="6975da39a7040257bd51d21a231b76c915872d38">
-        <dex dex="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_c9d15eb006ee03999e28079e338729979b4e4456.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.47.2/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="576b5113887747a7592650ae14d980e1c57983c4">
-        <dex dex="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.47.2_b4c99890f762397d69ca07b99695f462b0530803.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rahul/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
-        <dex dex="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_df8a0ff544122372a0ba78c357b717abcc3b86c6.jar" />
+        <dex dex="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_c9d15eb006ee03999e28079e338729979b4e4456.jar" />
     </item>
     <item
         is-multidex="false"
@@ -179,7 +80,106 @@
         optimize="true"
         revision="23.0.1"
         sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
-        <dex dex="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_6ab9344edcba50f1f586405c17cd964042a04ca0.jar" />
+        <dex dex="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_6ab9344edcba50f1f586405c17cd964042a04ca0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
+        <dex dex="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.0.1_502b8b349f0a12e10b19104363f957780fb27b82.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
+        <dex dex="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.0.1_4ff3190c8744dc89e0c47311163072daa0cf001e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
+        <dex dex="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.0.1_18fedc74d079600437f964d8168200139ab9899c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
+        <dex dex="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.0.1_63d960116460b04c553e740369fdee74cf349c9a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.0.1_09476bdc1be51e548de8a5c95caaed1d6d0923a1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.47.2/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_f2cc0edb49afdfcdb183443b24c8b68ab233d449.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rahul/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1_09dce415c2a57e2c9ec4e3cbbe837b98dbbc6cb8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1_b2887ac97d7766c4234f9463ab302e527b815347.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rahul/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_e050c62399c740e87c7a87284e792296b5c816d2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.47.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="576b5113887747a7592650ae14d980e1c57983c4">
+        <dex dex="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.47.2_168e0b7ba31307e39c8ee2b1c54000582c63d564.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rahul/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_df8a0ff544122372a0ba78c357b717abcc3b86c6.jar" />
     </item>
     <item
         is-multidex="false"
@@ -188,7 +188,7 @@
         optimize="true"
         revision="23.0.1"
         sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_7533fca3f416886f504dd96778a4c94e00c45b79.jar" />
+        <dex dex="/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_7533fca3f416886f504dd96778a4c94e00c45b79.jar" />
     </item>
 
 </items>

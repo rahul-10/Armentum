@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/rahul/Personal/Assignments/Armentum/android/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher.png",
+        "source": "/Users/rahul/Personal/Assignments/Armentum/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
         "merged": "/Users/rahul/Personal/Assignments/armentum/android/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher.png",
         "source": "/Users/rahul/Personal/Assignments/armentum/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     }
