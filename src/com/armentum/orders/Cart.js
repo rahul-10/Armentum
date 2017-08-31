@@ -100,7 +100,7 @@ class Cart extends Component {
         const { hotels } = this.state;
         let subTotal = 0;
         hotels.map((data, index)=>{
-            subTotal += data.amount;
+            subTotal = Math.round((subTotal+data.amount)*100)/100;
         })
         let tax = Math.round(subTotal*0.18*100)/100 ;
         let grandTotal = Math.round((subTotal + tax)*100)/100 ;

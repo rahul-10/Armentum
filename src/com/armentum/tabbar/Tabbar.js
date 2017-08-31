@@ -87,7 +87,7 @@ export default class Tabbar extends Component {
                 />
             </Scene>
               {/* Tab and it's scenes */}
-                <Scene key="tab1" title="Home" icon={TabIcon}  >
+                <Scene key="tab1" title="Home" icon={TabIcon} initial >
                     <Scene
                       key="home"
                       component={Home}
