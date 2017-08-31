@@ -98,7 +98,7 @@ export default class Tabbar extends Component {
                 </Scene>
 
               {/* Tab and it's scenes */}
-                <Scene key="tab2" title="Menu" icon={TabIcon} >
+                <Scene key="tab2" title="Menu" icon={TabIcon}  >
                     <Scene
                       key="menu"
                       component={Menu}
@@ -108,7 +108,7 @@ export default class Tabbar extends Component {
                 </Scene>
 
                 {/* Order's scene */}
-                <Scene key="tab3" title="Cart" icon={TabIcon} initial >
+                <Scene key="tab3" title="Cart" icon={TabIcon}  >
                     <Scene
                       key="cart"
                       component={Cart}

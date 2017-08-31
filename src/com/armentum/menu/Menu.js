@@ -11,7 +11,7 @@ class Menu extends Component {
     constructor(props){
         super(props);
         this.state = {
-            options : [{name:'Cafe 5H by The Kitchen', address:'Lowrence Road', type:'Casual Dining', isOpen:true, rating:'3.9', url: require('../images/menu/imgmenu1.png'), isFavourite:false }, {name:'Cafe 5H by The Kitchen', address:'Lowrence Road', type:'Casual Dining', isOpen:true, rating:'3.9', url: require('../images/menu/imgmenu1.png'), isFavourite:false }, {name:'Cafe 5H by The Kitchen', address:'Lowrence Road', type:'Casual Dining', isOpen:true, rating:'3.9', url: require('../images/menu/imgmenu1.png'), isFavourite:false }, {name:'Cafe 5H by The Kitchen', address:'Lowrence Road', type:'Casual Dining', isOpen:true, rating:'3.9', url: require('../images/menu/imgmenu1.png'), isFavourite:false }, {name:'Cafe 5H by The Kitchen', address:'Lowrence Road', type:'Casual Dining', isOpen:true, rating:'3.9', url: require('../images/menu/imgmenu1.png'), isFavourite:false }, {name:'Cafe 5H by The Kitchen', address:'Lowrence Road', type:'Casual Dining', isOpen:true, rating:'3.9', url: require('../images/menu/imgmenu1.png'), isFavourite:false }],
+            options : [{name:'Cafe 5H by The Kitchen', address:'Lowrence Road', type:'Casual Dining', isOpen:true, rating:'3.9', url: require('../images/menu/imgmenu1.png'), isFavourite:false }, {name:'Truffles Ice & Spice', address:'American', type:'Cafe', isOpen:true, rating:'4.2', url: require('../images/menu/imgmenu2.png'), isFavourite:false }, {name:'Cafe 5H by The Kitchen', address:'Lowrence Road', type:'Casual Dining', isOpen:true, rating:'3.9', url: require('../images/menu/imgmenu1.png'), isFavourite:false }, {name:'Cafe 5H by The Kitchen', address:'Lowrence Road', type:'Casual Dining', isOpen:true, rating:'3.9', url: require('../images/menu/imgmenu1.png'), isFavourite:false }, {name:'Cafe 5H by The Kitchen', address:'Lowrence Road', type:'Casual Dining', isOpen:true, rating:'3.9', url: require('../images/menu/imgmenu1.png'), isFavourite:false },{name:'Cafe 5H by The Kitchen', address:'Lowrence Road', type:'Casual Dining', isOpen:true, rating:'3.9', url: require('../images/menu/imgmenu1.png'), isFavourite:false }, {name:'Truffles Ice & Spice', address:'American', type:'Cafe', isOpen:true, rating:'4.2', url: require('../images/menu/imgmenu2.png')}, {name:'Cafe 5H by The Kitchen', address:'Lowrence Road', type:'Casual Dining', isOpen:true, rating:'3.9', url: require('../images/menu/imgmenu1.png'), isFavourite:false }],
             //animatedValue: new Animated.Value(12),
         }
     }
@@ -35,9 +35,9 @@ class Menu extends Component {
                 return(
                     <View style = {estyles.card} key = {index}>
                         <Image style = {estyles.image} source = {data.url} />
-                        <View style = {{padding:5}} >
+                        <View style = {{flex:1,justifyContent:'space-between', paddingHorizontal:5}} >
                             <View>
-                                <Text style = {{fontSize:10, fontWeight:'400',marginTop:5, color:'#000000'}} >{data.name}</Text>
+                                <Text style = {{fontSize:10, fontWeight:'400', color:'#000000'}} >{data.name}</Text>
                                 <Text style = {{fontSize:8, fontWeight:'400', color:'#898989'}} >{data.address}, {data.type}</Text>
                             </View>
                             <View style = {{flexDirection:'row',justifyContent:'space-between', alignItems:'center', marginTop:5}} >
@@ -84,11 +84,6 @@ const estyles = EStyleSheet.create({
         height:'40%',
         width:'100%',
     },
-    image:{
-        height:'100%',
-        width:'100%',
-        resizeMode:'cover'
-    },
     subContainer: {
         flex:1,
         padding:10,
@@ -96,7 +91,7 @@ const estyles = EStyleSheet.create({
         flexDirection:'row',
         flexWrap:'wrap',
         alignSelf:'center',
-        justifyContent:'space-between'
+        justifyContent:'flex-start'
     },
     card:{
         width:'33.2%',
@@ -108,7 +103,7 @@ const estyles = EStyleSheet.create({
     image:{
         height:70,
         width:'100%',
-        resizeMode:'cover'
+        resizeMode:'contain'
     }
 })
 
