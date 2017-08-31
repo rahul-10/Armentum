@@ -3,11 +3,6 @@ import { View, Text, StyleSheet, Dimensions, ImageBackground } from 'react-nativ
 var {height, width} = Dimensions.get('window');
 
 export default class Home extends Component {
-    constructor(props){
-        super(props);
-
-    }
-
     render(){
         return(
             <View style = {{flex:1}} >

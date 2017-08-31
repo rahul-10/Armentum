@@ -24,7 +24,7 @@ export default class Navigation extends Component {
             <Router>
                 <Scene key="root">
                     <Scene key="login" component={Login} initial={true} hideNavBar={true} />
-                    <Scene key="tabbar" component={Tabbar} hideNavBar={true} initial/>
+                    <Scene key="tabbar" component={Tabbar} hideNavBar={true}  />
                 </Scene>
            </Router>
         );

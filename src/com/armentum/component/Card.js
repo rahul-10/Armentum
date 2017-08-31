@@ -23,7 +23,7 @@ export default class Card extends Component {
                             <View style = {{flexDirection:'row',alignItems:'center'}} >
                                 <Text style = {{fontSize:10, fontWeight:'400', marginRight:3, color:"#F67C01"}} >{data.rating}</Text>
                                 <TouchableOpacity onPress = {this.props.checkFavourite}>
-                                    <Image style = {{height:10, width:10, resizeMode:'contain', tintColor:(data.isFavourite)?'#F67C01':null}} source = {require('../images/star.png')} />
+                                    <Image style = {{height:12, width:12, resizeMode:'contain', tintColor:(data.isFavourite)?'#F67C01':'#000000'}} source = {require('../images/star.png')} />
                                 </TouchableOpacity>
                             </View>
                         </View>

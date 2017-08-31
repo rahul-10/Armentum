@@ -87,7 +87,7 @@ export default class Tabbar extends Component {
                 />
             </Scene>
               {/* Tab and it's scenes */}
-                <Scene key="tab1" title="Home" icon={TabIcon} initial >
+                <Scene key="tab1" title="Home" icon={TabIcon}  >
                     <Scene
                       key="home"
                       component={Home}
@@ -98,7 +98,7 @@ export default class Tabbar extends Component {
                 </Scene>
 
               {/* Tab and it's scenes */}
-                <Scene key="tab2" title="Menu" icon={TabIcon}  >
+                <Scene key="tab2" title="Menu" icon={TabIcon} >
                     <Scene
                       key="menu"
                       component={Menu}
@@ -108,7 +108,7 @@ export default class Tabbar extends Component {
                 </Scene>
 
                 {/* Order's scene */}
-                <Scene key="tab3" title="Cart" icon={TabIcon}  >
+                <Scene key="tab3" title="Cart" icon={TabIcon} initial >
                     <Scene
                       key="cart"
                       component={Cart}
@@ -147,8 +147,8 @@ const estyles = EStyleSheet.create({
     },
     scene: {
         flex:1,
-        marginTop:(Platform.OS === 'ios') ? 15 : 0,
-        marginBottom:35,
+        paddingTop:(Platform.OS === 'ios') ? 15 : 0,
+        paddingBottom:35,
         backgroundColor:'#F7F7F7'
     },
 });

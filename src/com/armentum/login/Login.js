@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Text, TextInput, TouchableOpacity, Animated } from 'react-native';
+import { StyleSheet, View, Text, TextInput, TouchableOpacity, Animated, ActivityIndicator } from 'react-native';
 import firebase from 'firebase';
 import { Actions } from 'react-native-router-flux';
+
 
 class Login extends Component {
     constructor(props){
@@ -11,8 +12,9 @@ class Login extends Component {
             password:'',
             confirmPassword:'',
             error:'',
-            top: new Animated.Value(0),
+            top: new Animated.Value(-100),
             login:false,
+            animating:false
         }
     }
 
@@ -21,13 +23,24 @@ class Login extends Component {
         //this.setState({header : true})
         Animated.timing(
             top,{
-                toValue:230,
+                toValue:210,
                 friction:0.1,
                 duration:1000,
 
             }
         ).start()
+    }
 
+    up(){
+        const { top } = this.state;
+        //this.setState({header : true})
+        Animated.timing(
+            top,{
+                toValue:100,
+                friction:0.1,
+                duration:1000,
+            }
+        ).start()
     }
 
     componentWillMount() {
@@ -43,27 +56,43 @@ class Login extends Component {
     }
 
     loginUser(){
+        this.setState({animating:true})
         const { email, password } = this.state;
+
         firebase.auth().signInWithEmailAndPassword(email, password)
-          .then(() => {Actions.tabbar()})
-          .catch(() => { this.setState({error:'Either email or password is wrong!'})})
+          .then(() => {
+              this.setState({animating:false})
+              Actions.tabbar()
+          })
+          .catch((error) => { this.setState({animating:false, error:''+error})})
     }
 
     registerUser(){
+        this.setState({animating:true})
         const { email, password , confirmPassword} = this.state;
         if(password  != confirmPassword){
-            this.setState({error:'Password should be same!'});
+            this.setState({animating:false, error:'Password should be same!'});
             return;
         }
         firebase.auth().createUserWithEmailAndPassword(email, password)
-        .then(() => {Actions.tabbar() })
-        .catch((err) => {this.setState({error:''+err})})
+        .then(() => {
+            this.setState({animating:false})
+            Actions.tabbar()
+        })
+        .catch((err) => {this.setState({animating:false, error:''+err})})
     }
 
     render(){
+        if(this.state.animating){
+            return(
+                <View style = {{flex:1, justifyContent:'center', alignItems:'center'}} >
+                    <ActivityIndicator animating={this.state.animating} style={{height: 80}} size="large" />
+                </View>
+            );
+        }
         return(
             <View style = {{flex:1, justifyContent:'space-between', alignItems:'center'}} >
-                <Animated.View style = {{top:this.state.top}}>
+                <Animated.View style = {{flex:4,top:this.state.top}}>
                     <View>
                         <TextInput
                             placeholder = 'Email Address'
@@ -71,26 +100,32 @@ class Login extends Component {
                             underlineColorAndroid='transparent'
                             keyboardType = 'email-address'
                             autoCorrect = {false}
+                            returnKeyType = {'next'}
                             autoCapitalize = 'none'
-                            style={{width: 330,marginBottom:1, marginLeft: 2,height:30, color:'#000000',}}
+                            style={{width: 310,marginBottom:1, marginLeft: 2,height:30, color:'#000000',}}
+                            onFocus = {() => this.up()}
+                            onEndEditing = {() => this.load()}
                             onChangeText={(text) => this.setState({email:text})}
                             value={this.state.email}
                         />
-                        <View style = {{width:330, height:0.7, backgroundColor:'#d6d6d6',marginTop:2}} />
+                        <View style = {{width:310, height:0.7, backgroundColor:'#d6d6d6',marginTop:2}} />
                     </View>
                     <View>
                         <TextInput
                             placeholder = 'Password'
                             placeholderTextColor = '#d6d6d6'
                             underlineColorAndroid='transparent'
-                            secureTextEntry ={false}
+                            secureTextEntry ={true}
                             autoCorrect = {false}
+                            returnKeyType = {(this.state.login)?'next':'done'}
                             autoCapitalize = 'none'
-                            style={{width: 330,marginBottom:1, marginLeft: 2, height:30,color:'#000000', marginTop:15}}
+                            style={{width: 310,marginBottom:1, marginLeft: 2, height:30,color:'#000000', marginTop:15}}
                             onChangeText={(text) => this.setState({password:text})}
+                            onFocus = {() => this.up()}
+                            onEndEditing = {() => this.load()}
                             value={this.state.password}
                         />
-                        <View style = {{width:330, height:0.7, backgroundColor:'#d6d6d6',marginTop:2}} />
+                        <View style = {{width:310, height:0.7, backgroundColor:'#d6d6d6',marginTop:2}} />
                     </View>
                     {(this.state.login)?
                         <View>
@@ -98,21 +133,24 @@ class Login extends Component {
                                 placeholder = 'Confirm Password'
                                 placeholderTextColor = '#d6d6d6'
                                 underlineColorAndroid='transparent'
-                                secureTextEntry ={false}
+                                secureTextEntry ={true}
                                 autoCorrect = {false}
+                                returnKeyType = {'done'}
                                 autoCapitalize = 'none'
-                                style={{width: 330,marginBottom:1, marginLeft: 2, height:30,color:'#000000', marginTop:15}}
+                                style={{width: 310,marginBottom:1, marginLeft: 2, height:30,color:'#000000', marginTop:15}}
                                 onChangeText={(text) => this.setState({confirmPassword:text})}
+                                onFocus = {() => this.up()}
+                                onEndEditing = {() => this.load()}
                                 value={this.state.confirmPassword}
                             />
-                            <View style = {{width:330, height:0.7, backgroundColor:'#d6d6d6',marginTop:2}} />
+                            <View style = {{width:310, height:0.7, backgroundColor:'#d6d6d6',marginTop:2}} />
                         </View>:null
                     }
                 </Animated.View>
 
-                <View style = {{bottom:180}} >
+                <View style = {{flex:1,justifyContent:'flex-end', paddingBottom:20 }} >
                     <Text style = {{color:'red', fontSize:12, textAlign:'center', padding:15}} >{this.state.error}</Text>
-                    <TouchableOpacity onPress = {()=>this.setState({login : !this.state.login})} >
+                    <TouchableOpacity onPress = {()=>this.setState({login : !this.state.login, error:''})} >
                         <Text style = {{color:'#F67C01', fontSize:12, textAlign:'center'}} >Click here to {(this.state.login)?'Login':'Register'}</Text>
                     </TouchableOpacity>
                     <View style = {{marginTop:10}} >
@@ -124,8 +162,6 @@ class Login extends Component {
                                 <Text style = {{fontWeight:'bold', fontSize: 16, color: '#FFFFFF'}}>Register</Text>
                             </TouchableOpacity>
                         }
-
-
                     </View>
                 </View>
             </View>
@@ -143,5 +179,6 @@ var styles = StyleSheet.create({
         borderRadius: 25,
         backgroundColor:'#F67C01'
     },
+    centering: { alignItems: 'center', justifyContent: 'center', padding: 8, },
 })
 export default Login

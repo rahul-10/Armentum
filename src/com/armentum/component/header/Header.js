@@ -11,12 +11,14 @@ export default class Header extends Component {
     render(){
         return(
             <View style = {styles.container} >
-                <View>
-                    {(this.props.leftText)?<Text style = {{fontSize:10, color:'#FFFFFF'}} >{this.props.leftText}</Text>
+                <View style = {{flex:1}} >
+                    {(this.props.leftText)?<Text style = {{fontSize:9, color:'#FFFFFF',width:160}} >{this.props.leftText}</Text>
                     :<Image style = {{height:12, width:12, resizeMode:'contain',}} source = {require('../../images/back.png')} />}
                 </View>
-                <Text style = {{color:'#FFFFFF', fontSize:10, textAlign:'center'}} >{this.props.centerText}</Text>
-                <View style = {{flexDirection:'row', alignItems:'center', justifyContent:'center', alignSelf:'flex-end'}} >
+                <View style = {{flex:1}} >
+                    <Text style = {{color:'#FFFFFF', fontSize:12, textAlign:'center', left:1}} >{this.props.centerText}</Text>
+                </View>
+                <View style = {{flex:1, flexDirection:'row', alignItems:'center', justifyContent:'flex-end', alignSelf:'flex-end'}} >
                     <View style = {{flexDirection:'row', alignItems:'center'}} >
                         <Image style = {{height:12, width:12, resizeMode:'contain'}} source = {require('../../images/Cart.png')} />
                         <View style = {styles.cart} ><Text  style = {{fontSize:8, color:'#F67C01'}} >{this.props._totalCard}</Text></View>

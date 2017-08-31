@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, Dimensions, Image, ScrollView, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, Dimensions, Image, ScrollView, TouchableOpacity,  } from 'react-native';
 import EStyleSheet from 'react-native-extended-stylesheet';
 var {height, width} = Dimensions.get('window');
 import { connect } from 'react-redux';
@@ -11,9 +11,9 @@ class Menu extends Component {
     constructor(props){
         super(props);
         this.state = {
-            options : [{name:'Cafe 5H by The Kitchen', address:'Lowrence Road', type:'Casual Dining', isOpen:true, rating:'3.9', url: require('../images/menu/imgmenu1.png'), isFavourite:false }, {name:'Cafe 5H by The Kitchen', address:'Lowrence Road', type:'Casual Dining', isOpen:true, rating:'3.9', url: require('../images/menu/imgmenu1.png'), isFavourite:false }, {name:'Cafe 5H by The Kitchen', address:'Lowrence Road', type:'Casual Dining', isOpen:true, rating:'3.9', url: require('../images/menu/imgmenu1.png'), isFavourite:false }, {name:'Cafe 5H by The Kitchen', address:'Lowrence Road', type:'Casual Dining', isOpen:true, rating:'3.9', url: require('../images/menu/imgmenu1.png'), isFavourite:false }, {name:'Cafe 5H by The Kitchen', address:'Lowrence Road', type:'Casual Dining', isOpen:true, rating:'3.9', url: require('../images/menu/imgmenu1.png'), isFavourite:false }, {name:'Cafe 5H by The Kitchen', address:'Lowrence Road', type:'Casual Dining', isOpen:true, rating:'3.9', url: require('../images/menu/imgmenu1.png'), isFavourite:false }]
+            options : [{name:'Cafe 5H by The Kitchen', address:'Lowrence Road', type:'Casual Dining', isOpen:true, rating:'3.9', url: require('../images/menu/imgmenu1.png'), isFavourite:false }, {name:'Cafe 5H by The Kitchen', address:'Lowrence Road', type:'Casual Dining', isOpen:true, rating:'3.9', url: require('../images/menu/imgmenu1.png'), isFavourite:false }, {name:'Cafe 5H by The Kitchen', address:'Lowrence Road', type:'Casual Dining', isOpen:true, rating:'3.9', url: require('../images/menu/imgmenu1.png'), isFavourite:false }, {name:'Cafe 5H by The Kitchen', address:'Lowrence Road', type:'Casual Dining', isOpen:true, rating:'3.9', url: require('../images/menu/imgmenu1.png'), isFavourite:false }, {name:'Cafe 5H by The Kitchen', address:'Lowrence Road', type:'Casual Dining', isOpen:true, rating:'3.9', url: require('../images/menu/imgmenu1.png'), isFavourite:false }, {name:'Cafe 5H by The Kitchen', address:'Lowrence Road', type:'Casual Dining', isOpen:true, rating:'3.9', url: require('../images/menu/imgmenu1.png'), isFavourite:false }],
+            //animatedValue: new Animated.Value(12),
         }
-    console.log('Menu');
     }
 
     checkFavourite(data, index){
@@ -45,7 +45,7 @@ class Menu extends Component {
                                 <View style = {{flexDirection:'row',alignItems:'center'}} >
                                     <Text style = {{fontSize:10, fontWeight:'400', marginRight:3, color:"#F67C01"}} >{data.rating}</Text>
                                     <TouchableOpacity onPress = {() => {this.checkFavourite(data, index)}}>
-                                        <Image style = {{height:10, width:10, resizeMode:'contain', tintColor:(data.isFavourite)?'#F67C01':null}} source = {require('../images/star.png')} />
+                                        <Image style = {{height:12, width:12, resizeMode:'contain', tintColor:(data.isFavourite)?'#F67C01':'#000000'}} source = {require('../images/star.png')} />
                                     </TouchableOpacity>
                                 </View>
                             </View>
@@ -61,13 +61,10 @@ class Menu extends Component {
         return(
             <View style = {estyles.container} >
                 <Header _totalCard = {this.props._totalCard} leftText = {'We are happy to serve you!'} centerText = {'Menu'} rightIcon = {true} />
-                <View  >
-                    <Image style = {{height:130, width:width}} source = {require('../images/Head_Image.png')} />
-                </View>
+                <Image style = {{height:130, width:width}} source = {require('../images/Head_Image.png')} />
                 <ScrollView>
                     <View style = {estyles.subContainer} >
                         {this.showCard()}
-
                     </View>
                 </ScrollView>
 
@@ -93,8 +90,7 @@ const estyles = EStyleSheet.create({
         resizeMode:'cover'
     },
     subContainer: {
-        height:'60%',
-        width:'100%',
+        flex:1,
         padding:10,
         backgroundColor:"#FFFFFF",
         flexDirection:'row',
